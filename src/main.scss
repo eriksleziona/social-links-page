@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 :root {
   --background-color: #000;
 }
 
 html {
+  font-family: "Inter", "Sans Serif";
   width: 100%;
   height: 100%;
 }
