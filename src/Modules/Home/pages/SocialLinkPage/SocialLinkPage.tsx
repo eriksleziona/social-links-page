@@ -2,6 +2,16 @@ import { FC } from "react";
 import "./SocialLinkPage.scss";
 import Logo from "../../Components/Logo/Logo";
 import UserInformation from "../../Components/UserInformation/UserInformation";
+import Container from "../../Components/Container/Container";
+import SocialLink from "../../Components/SocialLink/SocialLink";
+
+const linksArr = [
+  "GitHub",
+  "Frontend Mentor",
+  "LinkedIn",
+  "Twitter",
+  "Instagram",
+];
 
 const SocialLinkPage: FC = () => {
   return (
@@ -13,6 +23,11 @@ const SocialLinkPage: FC = () => {
         country="United Kingdom"
         jobTitle="Front-end developer and avid reader."
       />
+      <Container>
+        {linksArr.map((item) => (
+          <SocialLink title={item} />
+        ))}
+      </Container>
     </div>
   );
 };

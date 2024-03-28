@@ -1,0 +1,15 @@
+.social-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  transition: all 1s ease-in-out;
+  padding: 12px 0 12px 0;
+  border-radius: 10px;
+  background-color: #333333;
+}
+
+.social-link:hover {
+  background-color: #c4f82a;
+  color: #000;
+}
